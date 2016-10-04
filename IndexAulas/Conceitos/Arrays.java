@@ -1,3 +1,5 @@
+// Array.sort(int[] a) - Sorts the specified array into ascending numerical order
+// VER MAIS FUNÇOES DE ARRAYS: https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
 
 public class Arrays {
 	int[] b = {10,20,30,40,50,60};
