@@ -74,3 +74,49 @@ Lilah is a 5 year old Female Klee Kai with a Grey/White coat.
 Alaska is a 16 year old Female Siberian Husky with a Grey/Black/White coat.
 
 */
+
+
+
+// UM OUTRO EXEMPLO 
+
+import java.util.*;
+abstract class Book
+{
+    String title;
+    String author;
+    Book(String t,String a){
+        title=t;
+        author=a;
+    }
+    abstract void display();
+
+
+}
+
+class MyBook extends Book{ 
+    int BookPrice; 
+    public MyBook(String title, String author, int price){ 
+        super(title,author); 
+        BookPrice = price; 
+    } 
+    
+    public void display(){ 
+        System.out.println("Title: "+this.title); 
+        System.out.println("Author: "+this.author); 
+        System.out.println("Price: "+BookPrice); } 
+}
+
+public class Solution
+{
+   
+   public static void main(String []args)
+   {
+      Scanner sc=new Scanner(System.in);
+      String title=sc.nextLine();
+      String author=sc.nextLine();
+      int price=sc.nextInt();
+      Book new_novel=new MyBook(title,author,price);
+      new_novel.display();
+      
+   }
+}
